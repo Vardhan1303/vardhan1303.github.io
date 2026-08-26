@@ -264,6 +264,16 @@ img{ max-width: 100%; display:block; }
 .org-row{
   display:flex; align-items:center; gap: .55rem;
 }
+.org-mono{
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: .56rem;
+  letter-spacing: -0.02em;
+  color: var(--ink-soft);
+  text-align: center;
+  line-height: 1.1;
+}
+.edu-item.org-row .org-mono{ font-size: .66rem; }
 
 /* =========================================================
    Timeline

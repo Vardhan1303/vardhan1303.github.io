@@ -40,10 +40,22 @@ no build step) so it deploys straight to GitHub Pages.
 ## Structure
 
 ```
-index.html        one-page site: hero, about, experience, projects, skills, contact
-css/style.css      design tokens + layout
-js/script.js       mobile nav, scroll reveal, active-link highlighting
-assets/            favicon + (add your résumé PDF here)
+index.html         one-page site: hero, about, experience, projects, skills, contact
+css/style.css       design tokens + layout
+js/script.js        mobile nav, scroll reveal, active-link highlighting
+media/projects/     real photos pulled from your own repos (platooning.jpg, robot-car.jpg)
+media/icons/        tech-stack icons (PyTorch, OpenCV, Docker, etc.) — real SVGs, self-hosted
+assets/             favicon + (add your résumé PDF here)
 ```
 
-No dependencies, no build step — edit the HTML directly and refresh.
+No dependencies, no build step, no external image hotlinks — everything the page shows is a local file in this repo. Edit the HTML directly and refresh.
+
+## Company & university logos
+
+IAV, ASAM, Adani, RWU, and MSU Baroda currently show as small monogram badges (IAV, ASAM, AG, RWU, MSU) rather than real logos — I can't fetch files from arbitrary company websites from where I run. If you'd like the real logos instead:
+
+1. Download each one (their press/brand page, or a clean version from Wikimedia Commons) as a small square PNG or SVG.
+2. Add them to a new `media/logos/` folder, named e.g. `iav.png`, `asam.png`, `adani.png`, `rwu.png`, `msu.png`.
+3. Tell me once they're uploaded and I'll swap the monogram `<div>`s for `<img>` tags pointing at them.
+
+
