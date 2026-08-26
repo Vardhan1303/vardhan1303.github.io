@@ -136,7 +136,7 @@
               <span class="timeline-date">Apr 2026 — Present</span>
             </div>
             <p class="timeline-org org-row">
-              <div class="org-logo org-mono" aria-hidden="true">ASAM</div>
+              <img class="org-logo" src="media/logos/asam-logo.png" alt="" loading="lazy">
               <span>ASAM e.V. · Kempten, Germany (Remote)</span>
             </p>
             <p class="timeline-desc">
@@ -155,7 +155,7 @@
               <span class="timeline-date">Apr 2025 — Dec 2025</span>
             </div>
             <p class="timeline-org org-row">
-              <div class="org-logo org-mono" aria-hidden="true">IAV</div>
+              <img class="org-logo" src="media/logos/iav-logo.jpg" alt="" loading="lazy">
               <span>IAV GmbH · Chemnitz, Germany</span>
             </p>
             <p class="timeline-desc">
@@ -179,7 +179,7 @@
               <span class="timeline-date">Dec 2024 — Feb 2025</span>
             </div>
             <p class="timeline-org org-row">
-              <div class="org-logo org-mono" aria-hidden="true">IAV</div>
+              <img class="org-logo" src="media/logos/iav-logo.jpg" alt="" loading="lazy">
               <span>IAV GmbH · Chemnitz, Germany</span>
             </p>
             <p class="timeline-desc">
@@ -198,7 +198,7 @@
               <span class="timeline-date">Aug 2022 — Aug 2023</span>
             </div>
             <p class="timeline-org org-row">
-              <div class="org-logo org-mono" aria-hidden="true">AG</div>
+              <img class="org-logo" src="media/logos/adani-logo.png" alt="" loading="lazy">
               <span>Adani Group · Kutch Copper Limited, Mundra, India</span>
             </p>
             <p class="timeline-desc">
@@ -221,13 +221,32 @@
         <h2>Selected work</h2>
       </div>
 
-      <div class="project-grid">
+      <div class="project-rows">
 
-        <article class="project-card project-card-featured reveal accent-cam">
-          <div class="project-card-body">
-            <div class="project-top">
-              <span class="project-tag-source">Industry · IAV GmbH thesis</span>
-            </div>
+        <article class="project-row project-row-featured reveal accent-cam">
+          <div class="project-row-media">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract diagram of a camera lens with a segmentation boundary separating a clean region from a soiled region">
+              <rect width="400" height="300" fill="var(--surface-alt)"/>
+              <circle cx="200" cy="150" r="98" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+              <path d="M112 90 A98 98 0 0 1 288 150 L200 150 Z" fill="var(--cam)" opacity="0.08"/>
+              <circle cx="150" cy="108" r="4" fill="var(--cam)" opacity="0.45"/>
+              <circle cx="178" cy="92" r="3" fill="var(--cam)" opacity="0.35"/>
+              <circle cx="205" cy="85" r="5" fill="var(--cam)" opacity="0.4"/>
+              <circle cx="235" cy="98" r="3" fill="var(--cam)" opacity="0.3"/>
+              <circle cx="255" cy="122" r="4" fill="var(--cam)" opacity="0.4"/>
+              <circle cx="192" cy="118" r="2.5" fill="var(--cam)" opacity="0.35"/>
+              <circle cx="222" cy="128" r="3" fill="var(--cam)" opacity="0.3"/>
+              <path d="M112 90 A98 98 0 0 1 288 150" fill="none" stroke="var(--cam)" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <g stroke="var(--ink-soft)" stroke-width="1.5" fill="none">
+                <path d="M78 78 h18 M78 78 v18"/>
+                <path d="M322 78 h-18 M322 78 v18"/>
+                <path d="M78 222 h18 M78 222 v-18"/>
+                <path d="M322 222 h-18 M322 222 v-18"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-row-body">
+            <span class="project-tag-source">Industry · IAV GmbH thesis</span>
             <h3>Flexible Soiling Detection for Automotive Cameras</h3>
             <p class="project-desc">
               Segmentation models that tell a clean camera from a blinded one — and trigger
@@ -246,16 +265,14 @@
           </div>
         </article>
 
-        <article class="project-card reveal accent-radar">
-          <div class="project-media">
+        <article class="project-row project-row-reverse reveal accent-radar">
+          <div class="project-row-media">
             <img src="media/projects/platooning.jpg"
                  alt="The two platooning robots — leader and ArUco-tracking follower — used in the project"
                  loading="lazy">
           </div>
-          <div class="project-card-body">
-            <div class="project-top">
-              <span class="project-tag-source">RWU · Scientific Project</span>
-            </div>
+          <div class="project-row-body">
+            <span class="project-tag-source">RWU · Scientific Project</span>
             <h3>Platooning Autonomous Following Robot</h3>
             <p class="project-desc">
               A low-cost robot that tracks and follows a lead vehicle using ArUco markers
@@ -271,16 +288,14 @@
           </div>
         </article>
 
-        <article class="project-card reveal accent-lidar">
-          <div class="project-media">
+        <article class="project-row reveal accent-lidar">
+          <div class="project-row-media">
             <img src="media/projects/robot-car.jpg"
                  alt="The Raspberry Pi robot car built for the Robot Car Racing Competition"
                  loading="lazy">
           </div>
-          <div class="project-card-body">
-            <div class="project-top">
-              <span class="project-tag-source">RWU · Course Project</span>
-            </div>
+          <div class="project-row-body">
+            <span class="project-tag-source">RWU · Course Project</span>
             <h3>Robot Car Racing Competition</h3>
             <p class="project-desc">
               Four autonomous-driving tasks on one Raspberry Pi rig: camera line following,
@@ -296,11 +311,30 @@
           </div>
         </article>
 
-        <article class="project-card reveal accent-cam">
-          <div class="project-card-body">
-            <div class="project-top">
-              <span class="project-tag-source">Coursework</span>
-            </div>
+        <article class="project-row project-row-reverse reveal accent-cam">
+          <div class="project-row-media">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract diagram of layered depth planes with an AR marker and a detection bounding box">
+              <rect width="400" height="300" fill="var(--surface-alt)"/>
+              <rect x="60" y="150" width="150" height="100" rx="4" fill="var(--lidar)" opacity="0.12"/>
+              <rect x="110" y="110" width="150" height="100" rx="4" fill="var(--lidar)" opacity="0.2"/>
+              <rect x="160" y="70" width="150" height="100" rx="4" fill="var(--lidar)" opacity="0.32"/>
+              <g transform="translate(255,150)">
+                <rect x="-24" y="-24" width="48" height="48" rx="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.5"/>
+                <circle cx="-14" cy="-14" r="2.5" fill="var(--ink)"/>
+                <circle cx="14" cy="-14" r="2.5" fill="var(--ink)"/>
+                <circle cx="-14" cy="14" r="2.5" fill="var(--ink)"/>
+                <circle cx="14" cy="14" r="2.5" fill="var(--ink)"/>
+              </g>
+              <g stroke="var(--cam)" stroke-width="1.5" fill="none">
+                <path d="M118 96 h16 M118 96 v16"/>
+                <path d="M282 96 h-16 M282 96 v16"/>
+                <path d="M118 204 h16 M118 204 v-16"/>
+                <path d="M282 204 h-16 M282 204 v-16"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-row-body">
+            <span class="project-tag-source">Coursework</span>
             <h3>Augmented Reality &amp; Depth Estimation</h3>
             <p class="project-desc">
               Marker-based AR overlays alongside monocular object detection with depth
@@ -375,7 +409,7 @@
       </div>
       <div class="edu-grid">
         <div class="edu-item reveal org-row">
-          <div class="org-logo org-mono" aria-hidden="true">RWU</div>
+          <img class="org-logo" src="media/logos/rwu-logo.png" alt="" loading="lazy">
           <div>
             <h3>M.Sc. Mechatronics</h3>
             <p>Hochschule Ravensburg-Weingarten (RWU)</p>
@@ -383,7 +417,7 @@
           </div>
         </div>
         <div class="edu-item reveal org-row">
-          <div class="org-logo org-mono" aria-hidden="true">MSU</div>
+          <img class="org-logo" src="media/logos/msu-logo.jpg" alt="" loading="lazy">
           <div>
             <h3>B.E. Mechanical Engineering</h3>
             <p>The Maharaja Sayajirao University of Baroda</p>
