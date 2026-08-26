@@ -47,32 +47,39 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
     <div class="wrap">
-      <p class="eyebrow reveal">Perception &amp; Robotics Engineer</p>
-      <h1 class="hero-name reveal">
-        Vardhan Mistry
-        <span class="hero-underline" aria-hidden="true"></span>
-      </h1>
-      <p class="hero-lede reveal">
-        I build perception systems that help machines see — fusing
-        <span class="tag-word tag-cam">camera</span>,
-        <span class="tag-word tag-radar">radar</span> and
-        <span class="tag-word tag-lidar">LiDAR</span>
-        data into decisions autonomous systems can act on.
-      </p>
+      <div class="hero-grid">
+        <div class="hero-photo reveal">
+          <img src="media/profile.png" alt="Portrait of Vardhan Mistry" loading="lazy">
+        </div>
+        <div class="hero-main">
+          <p class="eyebrow reveal">Perception &amp; Robotics Engineer</p>
+          <h1 class="hero-name reveal">
+            Vardhan Mistry
+            <span class="hero-underline" aria-hidden="true"></span>
+          </h1>
+          <p class="hero-lede reveal">
+            I build perception systems that help machines see — fusing
+            <span class="tag-word tag-cam">camera</span>,
+            <span class="tag-word tag-radar">radar</span> and
+            <span class="tag-word tag-lidar">LiDAR</span>
+            data into decisions autonomous systems can act on.
+          </p>
 
-      <div class="hero-cta reveal">
-        <a class="btn btn-primary" href="assets/Vardhan_Mistry_Resume.pdf" download>Download résumé</a>
-        <a class="btn btn-ghost" href="https://github.com/Vardhan1303" target="_blank" rel="noopener">View GitHub ↗</a>
-        <a class="btn btn-ghost" href="mailto:mistryvardhan@gmail.com">Email me</a>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="assets/Vardhan_Mistry_Resume.pdf" download>Download résumé</a>
+            <a class="btn btn-ghost" href="https://github.com/Vardhan1303" target="_blank" rel="noopener">View GitHub ↗</a>
+            <a class="btn btn-ghost" href="mailto:mistryvardhan@gmail.com">Email me</a>
+          </div>
+
+          <p class="hero-meta reveal">
+            <span>Chemnitz, Germany</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>Open to relocation across Germany &amp; the EU</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>M.Sc. Mechatronics</span>
+          </p>
+        </div>
       </div>
-
-      <p class="hero-meta reveal">
-        <span>Chemnitz, Germany</span>
-        <span class="dot" aria-hidden="true">·</span>
-        <span>Open to relocation across Germany &amp; the EU</span>
-        <span class="dot" aria-hidden="true">·</span>
-        <span>M.Sc. Mechatronics</span>
-      </p>
     </div>
   </section>
 
@@ -84,9 +91,6 @@
         <h2>What I do</h2>
       </div>
       <div class="about-grid">
-        <div class="about-photo reveal">
-          <img src="media/profile.png" alt="Portrait of Vardhan Mistry" loading="lazy">
-        </div>
         <p class="about-text reveal">
           I'm a Mechatronics engineer (M.Sc., Hochschule Ravensburg-Weingarten) specializing
           in perception for autonomous systems — training segmentation and detection models
@@ -231,7 +235,7 @@
 
     <div class="project-rows">
 
-        <article class="project-row project-row-featured reveal accent-cam">
+        <article class="project-row reveal">
           <div class="project-row-media">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract diagram of a camera lens with a segmentation boundary separating a clean region from a soiled region">
               <rect width="400" height="300" fill="var(--surface-alt)"/>
@@ -254,72 +258,47 @@
             </svg>
           </div>
           <div class="project-row-body">
-            <span class="project-tag-source">Industry · IAV GmbH thesis</span>
             <h3>Flexible Soiling Detection for Automotive Cameras</h3>
             <p class="project-desc">
               Segmentation models that tell a clean camera from a blinded one — and trigger
               a cleaning system before the vehicle drives blind.
             </p>
-            <ul class="project-metrics">
-              <li><span class="metric">0.89</span> IoU</li>
-              <li><span class="metric">0.94</span> Dice</li>
-              <li><span class="metric">0.17%</span> FPR</li>
-              <li><span class="metric">7ms</span> / 7.7M params</li>
-            </ul>
-            <ul class="project-tech">
-              <li>PyTorch</li><li>DeepLabV3+</li><li>SegFormer</li><li>PIDNet</li><li>ONNX</li>
-            </ul>
-            <p class="project-note">Confidential industry project — details on request.</p>
           </div>
         </article>
 
-        <article class="project-row project-row-reverse reveal accent-radar">
+        <article class="project-row project-row-reverse reveal">
           <div class="project-row-media">
             <img src="media/projects/platooning.jpg"
                  alt="The two platooning robots — leader and ArUco-tracking follower — used in the project"
                  loading="lazy">
           </div>
           <div class="project-row-body">
-            <span class="project-tag-source">RWU · Scientific Project</span>
             <h3>Platooning Autonomous Following Robot</h3>
             <p class="project-desc">
               A low-cost robot that tracks and follows a lead vehicle using ArUco markers
               and a Kalman filter for smooth, noise-resistant tracking — no LiDAR required.
             </p>
-            <ul class="project-tech">
-              <li>OpenCV</li><li>ArUco</li><li>Kalman Filter</li><li>Raspberry&nbsp;Pi</li>
-            </ul>
-            <div class="project-foot">
-              <p class="project-note">with Jai Doshi · supervised by Prof. Dr. Stefan Elser</p>
-              <a href="https://github.com/Vardhan1303/Scientific_project" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <a class="project-link" href="https://github.com/Vardhan1303/Scientific_project" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
-        <article class="project-row reveal accent-lidar">
+        <article class="project-row reveal">
           <div class="project-row-media">
             <img src="media/projects/robot-car.jpg"
                  alt="The Raspberry Pi robot car built for the Robot Car Racing Competition"
                  loading="lazy">
           </div>
           <div class="project-row-body">
-            <span class="project-tag-source">RWU · Course Project</span>
             <h3>Robot Car Racing Competition</h3>
             <p class="project-desc">
               Four autonomous-driving tasks on one Raspberry Pi rig: camera line following,
               LiDAR-based obstacle stopping, colour-cube approach and ArUco-marker response.
             </p>
-            <ul class="project-tech">
-              <li>OpenCV</li><li>RPLidar</li><li>Camera Calibration</li>
-            </ul>
-            <div class="project-foot">
-              <p class="project-note">with Rajveersinh Suratiya &amp; Hardik Rathwa</p>
-              <a href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <a class="project-link" href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
-        <article class="project-row project-row-reverse reveal accent-cam">
+        <article class="project-row project-row-reverse reveal">
           <div class="project-row-media">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract diagram of layered depth planes with an AR marker and a detection bounding box">
               <rect width="400" height="300" fill="var(--surface-alt)"/>
@@ -342,19 +321,12 @@
             </svg>
           </div>
           <div class="project-row-body">
-            <span class="project-tag-source">Coursework</span>
             <h3>Augmented Reality &amp; Depth Estimation</h3>
             <p class="project-desc">
               Marker-based AR overlays alongside monocular object detection with depth
               estimation — two short computer-vision studies in one repo.
             </p>
-            <ul class="project-tech">
-              <li>OpenCV</li><li>AR</li><li>Depth Estimation</li>
-            </ul>
-            <div class="project-foot">
-              <p class="project-note">&nbsp;</p>
-              <a href="https://github.com/Vardhan1303/Computer_Vision" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <a class="project-link" href="https://github.com/Vardhan1303/Computer_Vision" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
@@ -377,78 +349,156 @@
         <h2>Toolbox</h2>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-group reveal accent-cam">
-          <h3>Perception &amp; Deep Learning</h3>
-          <ul class="chip-list">
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/pytorch.svg" alt="" loading="lazy"></span>PyTorch</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/opencv.svg" alt="" loading="lazy"></span>OpenCV</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/onnx.svg" alt="" loading="lazy"></span>ONNX</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/nvidia.svg" alt="" loading="lazy"></span>TensorRT</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/nvidia.svg" alt="" loading="lazy"></span>CUDA</li>
-          </ul>
+      <div class="orbit reveal" style="--count:19">
+        <div class="orbit-center">
+          <span>VM.</span>
+          <small>Toolbox</small>
         </div>
-        <div class="skill-group reveal accent-radar">
-          <h3>Robotics &amp; Simulation</h3>
-          <ul class="chip-list">
-            <li><span class="chip-icon-wrap chip-mono">R2</span>ROS2</li>
-            <li><span class="chip-icon-wrap chip-mono">GZ</span>Gazebo</li>
-            <li><span class="chip-icon-wrap chip-dot dot-cam"></span>Camera</li>
-            <li><span class="chip-icon-wrap chip-dot dot-radar"></span>Radar</li>
-            <li><span class="chip-icon-wrap chip-dot dot-lidar"></span>LiDAR</li>
-          </ul>
-        </div>
-        <div class="skill-group reveal accent-lidar">
-          <h3>Languages &amp; Tools</h3>
-          <ul class="chip-list">
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/cplusplus.svg" alt="" loading="lazy"></span>C++</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/python.svg" alt="" loading="lazy"></span>Python</li>
-            <li><span class="chip-icon-wrap chip-mono">ML</span>MATLAB</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/docker.svg" alt="" loading="lazy"></span>Docker</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/git.svg" alt="" loading="lazy"></span>Git</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/gitlab.svg" alt="" loading="lazy"></span>GitLab</li>
-            <li><span class="chip-icon-wrap chip-mono">CI</span>CI/CD</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/linux.svg" alt="" loading="lazy"></span>Linux</li>
-            <li><span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/jira.svg" alt="" loading="lazy"></span>Jira</li>
-          </ul>
-        </div>
+        <ul class="orbit-ring">
+        <li style="--angle:0.0deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/pytorch.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">PyTorch</span>
+          </div>
+        </li>
+        <li style="--angle:18.947deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/opencv.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">OpenCV</span>
+          </div>
+        </li>
+        <li style="--angle:37.895deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/onnx.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">ONNX</span>
+          </div>
+        </li>
+        <li style="--angle:56.842deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/nvidia.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">TensorRT</span>
+          </div>
+        </li>
+        <li style="--angle:75.789deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/nvidia.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">CUDA</span>
+          </div>
+        </li>
+        <li style="--angle:94.737deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-mono">R2</span>
+            <span class="orbit-label">ROS2</span>
+          </div>
+        </li>
+        <li style="--angle:113.684deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-mono">GZ</span>
+            <span class="orbit-label">Gazebo</span>
+          </div>
+        </li>
+        <li style="--angle:132.632deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-dot dot-cam"></span>
+            <span class="orbit-label">Camera</span>
+          </div>
+        </li>
+        <li style="--angle:151.579deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-dot dot-radar"></span>
+            <span class="orbit-label">Radar</span>
+          </div>
+        </li>
+        <li style="--angle:170.526deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-dot dot-lidar"></span>
+            <span class="orbit-label">LiDAR</span>
+          </div>
+        </li>
+        <li style="--angle:189.474deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/cplusplus.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">C++</span>
+          </div>
+        </li>
+        <li style="--angle:208.421deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/python.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">Python</span>
+          </div>
+        </li>
+        <li style="--angle:227.368deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-mono">ML</span>
+            <span class="orbit-label">MATLAB</span>
+          </div>
+        </li>
+        <li style="--angle:246.316deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/docker.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">Docker</span>
+          </div>
+        </li>
+        <li style="--angle:265.263deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/git.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">Git</span>
+          </div>
+        </li>
+        <li style="--angle:284.211deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/gitlab.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">GitLab</span>
+          </div>
+        </li>
+        <li style="--angle:303.158deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap chip-mono">CI</span>
+            <span class="orbit-label">CI/CD</span>
+          </div>
+        </li>
+        <li style="--angle:322.105deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/linux.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">Linux</span>
+          </div>
+        </li>
+        <li style="--angle:341.053deg">
+          <div class="orbit-item">
+            <span class="chip-icon-wrap"><img class="chip-icon" src="media/icons/jira.svg" alt="" loading="lazy"></span>
+            <span class="orbit-label">Jira</span>
+          </div>
+        </li>
+        </ul>
       </div>
 
-      <div class="section-head reveal" style="margin-top:3.5rem;">
+      <div class="section-head reveal" style="margin-top:4.5rem;">
         <p class="eyebrow">Education</p>
       </div>
-    </div>
 
-    <ol class="timeline timeline-edu">
-      <li class="timeline-item reveal">
-        <div class="timeline-row">
-          <div class="timeline-logo">
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-card-logo">
             <img src="media/logos/rwu-logo-fit.png" alt="Hochschule Ravensburg-Weingarten logo" loading="lazy">
           </div>
-          <div class="timeline-main">
-            <div class="timeline-top">
-              <h3>M.Sc. Mechatronics</h3>
-              <span class="timeline-date">Sept 2023 — Jan 2026</span>
-            </div>
-            <p class="timeline-org">Hochschule Ravensburg-Weingarten (RWU)</p>
+          <div class="edu-card-main">
+            <h3>M.Sc. Mechatronics</h3>
+            <p>Hochschule Ravensburg-Weingarten (RWU)</p>
+            <p class="edu-date">Sept 2023 — Jan 2026</p>
           </div>
         </div>
-      </li>
-      <li class="timeline-item reveal">
-        <div class="timeline-row">
-          <div class="timeline-logo">
+        <div class="edu-card reveal">
+          <div class="edu-card-logo">
             <img src="media/logos/msu-logo-fit.png" alt="The Maharaja Sayajirao University of Baroda logo" loading="lazy">
           </div>
-          <div class="timeline-main">
-            <div class="timeline-top">
-              <h3>B.E. Mechanical Engineering</h3>
-              <span class="timeline-date">Jul 2018 — May 2022</span>
-            </div>
-            <p class="timeline-org">The Maharaja Sayajirao University of Baroda</p>
+          <div class="edu-card-main">
+            <h3>B.E. Mechanical Engineering</h3>
+            <p>The Maharaja Sayajirao University of Baroda</p>
+            <p class="edu-date">Jul 2018 — May 2022</p>
           </div>
         </div>
-      </li>
-    </ol>
+      </div>
+    </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
