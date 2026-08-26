@@ -249,6 +249,23 @@ img{ max-width: 100%; display:block; }
 .about-facts dd{ margin:0; font-size: .95rem; }
 
 /* =========================================================
+   Org / institution logo chips (favicons of real employers & schools)
+   ========================================================= */
+.org-logo{
+  width: 26px; height: 26px;
+  flex: none;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  display:flex; align-items:center; justify-content:center;
+  padding: 4px;
+  object-fit: contain;
+}
+.org-row{
+  display:flex; align-items:center; gap: .55rem;
+}
+
+/* =========================================================
    Timeline
    ========================================================= */
 .timeline{ position: relative; padding-left: 1.6rem; }
@@ -281,6 +298,7 @@ img{ max-width: 100%; display:block; }
   color: var(--ink-faint); white-space: nowrap;
 }
 .timeline-org{ color: var(--ink-soft); font-size: .92rem; margin-bottom: .5rem; }
+.timeline-org.org-row{ margin-bottom: .6rem; }
 .timeline-desc{ color: var(--ink-soft); font-size: .95rem; max-width: 62ch; }
 .timeline-desc em{ font-style: normal; color: var(--ink); font-weight: 500; }
 .metric{
@@ -301,7 +319,8 @@ img{ max-width: 100%; display:block; }
   border: 1px solid var(--line);
   border-top: 2px solid var(--line);
   border-radius: var(--radius);
-  padding: 1.6rem;
+  padding: 0;
+  overflow: hidden;
   display:flex; flex-direction: column;
   transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-top-color .2s var(--ease);
 }
@@ -314,6 +333,26 @@ img{ max-width: 100%; display:block; }
 .accent-lidar{ border-top-color: var(--lidar); }
 
 .project-card-featured{ grid-column: 1 / -1; }
+
+.project-media{
+  aspect-ratio: 16 / 9;
+  background: var(--surface-alt);
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
+}
+.project-media img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display:block;
+  transition: transform .4s var(--ease);
+}
+.project-card:hover .project-media img{ transform: scale(1.04); }
+
+.project-card-body{
+  padding: 1.6rem;
+  display:flex; flex-direction: column;
+  flex: 1;
+}
 
 .project-top{ margin-bottom: .7rem; }
 .project-tag-source{
@@ -384,12 +423,14 @@ img{ max-width: 100%; display:block; }
 }
 .chip-list{ display:flex; flex-wrap: wrap; gap: .5rem; }
 .chip-list li{
+  display: flex; align-items: center; gap: .45rem;
   font-size: .86rem;
   background: var(--surface);
   border: 1px solid var(--line);
   padding: .4rem .75rem;
   border-radius: var(--radius);
 }
+.chip-icon{ width: 15px; height: 15px; flex: none; object-fit: contain; }
 
 .edu-grid{
   display:grid;
@@ -402,6 +443,8 @@ img{ max-width: 100%; display:block; }
   border-radius: var(--radius);
   padding: 1.3rem 1.5rem;
 }
+.edu-item.org-row{ align-items: flex-start; gap: .85rem; }
+.edu-item.org-row .org-logo{ width: 34px; height: 34px; margin-top: .1rem; }
 .edu-item h3{ font-size: 1rem; margin-bottom: .3rem; }
 .edu-item p{ font-size: .9rem; color: var(--ink-soft); }
 .edu-date{

@@ -135,7 +135,10 @@
               <h3>Research Collaborator — ADAS Simulation</h3>
               <span class="timeline-date">Apr 2026 — Present</span>
             </div>
-            <p class="timeline-org">ASAM e.V. · Kempten, Germany (Remote)</p>
+            <p class="timeline-org org-row">
+              <img class="org-logo" src="https://www.google.com/s2/favicons?domain=asam.net&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+              <span>ASAM e.V. · Kempten, Germany (Remote)</span>
+            </p>
             <p class="timeline-desc">
               Building a sensor-impairment framework for ASAM ADSim, starting with
               rain-drop impairment on camera models — work aimed at FAST-Zero 2027
@@ -151,7 +154,10 @@
               <h3>Master's Thesis Student <span class="grade">· Grade 1.0</span></h3>
               <span class="timeline-date">Apr 2025 — Dec 2025</span>
             </div>
-            <p class="timeline-org">IAV GmbH · Chemnitz, Germany</p>
+            <p class="timeline-org org-row">
+              <img class="org-logo" src="https://www.google.com/s2/favicons?domain=iav.com&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+              <span>IAV GmbH · Chemnitz, Germany</span>
+            </p>
             <p class="timeline-desc">
               <em>Flexible Soiling Detection for Automotive Cameras.</em> Built MudGAN to
               synthesize mud and soiling data, and collected and annotated a real-vehicle
@@ -172,7 +178,10 @@
               <h3>Software Developer Intern</h3>
               <span class="timeline-date">Dec 2024 — Feb 2025</span>
             </div>
-            <p class="timeline-org">IAV GmbH · Chemnitz, Germany</p>
+            <p class="timeline-org org-row">
+              <img class="org-logo" src="https://www.google.com/s2/favicons?domain=iav.com&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+              <span>IAV GmbH · Chemnitz, Germany</span>
+            </p>
             <p class="timeline-desc">
               Built a procedural raindrop-simulation tool to augment clean camera images
               with virtual soiling for camera-blindness detection — the foundation the
@@ -188,7 +197,10 @@
               <h3>Assistant Manager — Industrial Automation</h3>
               <span class="timeline-date">Aug 2022 — Aug 2023</span>
             </div>
-            <p class="timeline-org">Adani Group · Kutch Copper Limited, Mundra, India</p>
+            <p class="timeline-org org-row">
+              <img class="org-logo" src="https://www.google.com/s2/favicons?domain=adani.com&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+              <span>Adani Group · Kutch Copper Limited, Mundra, India</span>
+            </p>
             <p class="timeline-desc">
               Managed erection of 18,000&nbsp;MT of structural steel on a greenfield
               copper smelter, ran SAP&nbsp;MM procurement and contractor billing up to
@@ -212,77 +224,95 @@
       <div class="project-grid">
 
         <article class="project-card project-card-featured reveal accent-cam">
-          <div class="project-top">
-            <span class="project-tag-source">Industry · IAV GmbH thesis</span>
+          <div class="project-card-body">
+            <div class="project-top">
+              <span class="project-tag-source">Industry · IAV GmbH thesis</span>
+            </div>
+            <h3>Flexible Soiling Detection for Automotive Cameras</h3>
+            <p class="project-desc">
+              Segmentation models that tell a clean camera from a blinded one — and trigger
+              a cleaning system before the vehicle drives blind.
+            </p>
+            <ul class="project-metrics">
+              <li><span class="metric">0.89</span> IoU</li>
+              <li><span class="metric">0.94</span> Dice</li>
+              <li><span class="metric">0.17%</span> FPR</li>
+              <li><span class="metric">7ms</span> / 7.7M params</li>
+            </ul>
+            <ul class="project-tech">
+              <li>PyTorch</li><li>DeepLabV3+</li><li>SegFormer</li><li>PIDNet</li><li>ONNX</li>
+            </ul>
+            <p class="project-note">Confidential industry project — details on request.</p>
           </div>
-          <h3>Flexible Soiling Detection for Automotive Cameras</h3>
-          <p class="project-desc">
-            Segmentation models that tell a clean camera from a blinded one — and trigger
-            a cleaning system before the vehicle drives blind.
-          </p>
-          <ul class="project-metrics">
-            <li><span class="metric">0.89</span> IoU</li>
-            <li><span class="metric">0.94</span> Dice</li>
-            <li><span class="metric">0.17%</span> FPR</li>
-            <li><span class="metric">7ms</span> / 7.7M params</li>
-          </ul>
-          <ul class="project-tech">
-            <li>PyTorch</li><li>DeepLabV3+</li><li>SegFormer</li><li>PIDNet</li><li>ONNX</li>
-          </ul>
-          <p class="project-note">Confidential industry project — details on request.</p>
         </article>
 
         <article class="project-card reveal accent-radar">
-          <div class="project-top">
-            <span class="project-tag-source">RWU · Scientific Project</span>
+          <div class="project-media">
+            <img src="https://raw.githubusercontent.com/Vardhan1303/Scientific_project/main/media/platooning.jpeg"
+                 alt="The two platooning robots — leader and ArUco-tracking follower — used in the project"
+                 loading="lazy">
           </div>
-          <h3>Platooning Autonomous Following Robot</h3>
-          <p class="project-desc">
-            A low-cost robot that tracks and follows a lead vehicle using ArUco markers
-            and a Kalman filter for smooth, noise-resistant tracking — no LiDAR required.
-          </p>
-          <ul class="project-tech">
-            <li>OpenCV</li><li>ArUco</li><li>Kalman Filter</li><li>Raspberry&nbsp;Pi</li>
-          </ul>
-          <div class="project-foot">
-            <p class="project-note">with Jai Doshi · supervised by Prof. Dr. Stefan Elser</p>
-            <a href="https://github.com/Vardhan1303/Scientific_project" target="_blank" rel="noopener">Code ↗</a>
+          <div class="project-card-body">
+            <div class="project-top">
+              <span class="project-tag-source">RWU · Scientific Project</span>
+            </div>
+            <h3>Platooning Autonomous Following Robot</h3>
+            <p class="project-desc">
+              A low-cost robot that tracks and follows a lead vehicle using ArUco markers
+              and a Kalman filter for smooth, noise-resistant tracking — no LiDAR required.
+            </p>
+            <ul class="project-tech">
+              <li>OpenCV</li><li>ArUco</li><li>Kalman Filter</li><li>Raspberry&nbsp;Pi</li>
+            </ul>
+            <div class="project-foot">
+              <p class="project-note">with Jai Doshi · supervised by Prof. Dr. Stefan Elser</p>
+              <a href="https://github.com/Vardhan1303/Scientific_project" target="_blank" rel="noopener">Code ↗</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card reveal accent-lidar">
-          <div class="project-top">
-            <span class="project-tag-source">RWU · Course Project</span>
+          <div class="project-media">
+            <img src="https://raw.githubusercontent.com/Vardhan1303/Robot-Car-Racing-Competition/main/robot.jpeg"
+                 alt="The Raspberry Pi robot car built for the Robot Car Racing Competition"
+                 loading="lazy">
           </div>
-          <h3>Robot Car Racing Competition</h3>
-          <p class="project-desc">
-            Four autonomous-driving tasks on one Raspberry Pi rig: camera line following,
-            LiDAR-based obstacle stopping, colour-cube approach and ArUco-marker response.
-          </p>
-          <ul class="project-tech">
-            <li>OpenCV</li><li>RPLidar</li><li>Camera Calibration</li>
-          </ul>
-          <div class="project-foot">
-            <p class="project-note">with Rajveersinh Suratiya &amp; Hardik Rathwa</p>
-            <a href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener">Code ↗</a>
+          <div class="project-card-body">
+            <div class="project-top">
+              <span class="project-tag-source">RWU · Course Project</span>
+            </div>
+            <h3>Robot Car Racing Competition</h3>
+            <p class="project-desc">
+              Four autonomous-driving tasks on one Raspberry Pi rig: camera line following,
+              LiDAR-based obstacle stopping, colour-cube approach and ArUco-marker response.
+            </p>
+            <ul class="project-tech">
+              <li>OpenCV</li><li>RPLidar</li><li>Camera Calibration</li>
+            </ul>
+            <div class="project-foot">
+              <p class="project-note">with Rajveersinh Suratiya &amp; Hardik Rathwa</p>
+              <a href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener">Code ↗</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card reveal accent-cam">
-          <div class="project-top">
-            <span class="project-tag-source">Coursework</span>
-          </div>
-          <h3>Augmented Reality &amp; Depth Estimation</h3>
-          <p class="project-desc">
-            Marker-based AR overlays alongside monocular object detection with depth
-            estimation — two short computer-vision studies in one repo.
-          </p>
-          <ul class="project-tech">
-            <li>OpenCV</li><li>AR</li><li>Depth Estimation</li>
-          </ul>
-          <div class="project-foot">
-            <p class="project-note">&nbsp;</p>
-            <a href="https://github.com/Vardhan1303/Computer_Vision" target="_blank" rel="noopener">Code ↗</a>
+          <div class="project-card-body">
+            <div class="project-top">
+              <span class="project-tag-source">Coursework</span>
+            </div>
+            <h3>Augmented Reality &amp; Depth Estimation</h3>
+            <p class="project-desc">
+              Marker-based AR overlays alongside monocular object detection with depth
+              estimation — two short computer-vision studies in one repo.
+            </p>
+            <ul class="project-tech">
+              <li>OpenCV</li><li>AR</li><li>Depth Estimation</li>
+            </ul>
+            <div class="project-foot">
+              <p class="project-note">&nbsp;</p>
+              <a href="https://github.com/Vardhan1303/Computer_Vision" target="_blank" rel="noopener">Code ↗</a>
+            </div>
           </div>
         </article>
 
@@ -308,7 +338,11 @@
         <div class="skill-group reveal">
           <h3>Perception &amp; Deep Learning</h3>
           <ul class="chip-list">
-            <li>PyTorch</li><li>OpenCV</li><li>ONNX</li><li>TensorRT</li><li>CUDA</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/pytorch/12151A" alt="" loading="lazy" onerror="this.remove()">PyTorch</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/opencv/12151A" alt="" loading="lazy" onerror="this.remove()">OpenCV</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/onnx/12151A" alt="" loading="lazy" onerror="this.remove()">ONNX</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/nvidia/12151A" alt="" loading="lazy" onerror="this.remove()">TensorRT</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/nvidia/12151A" alt="" loading="lazy" onerror="this.remove()">CUDA</li>
           </ul>
         </div>
         <div class="skill-group reveal">
@@ -323,8 +357,15 @@
         <div class="skill-group reveal">
           <h3>Languages &amp; Tools</h3>
           <ul class="chip-list">
-            <li>C++</li><li>Python</li><li>MATLAB</li><li>Docker</li>
-            <li>Git</li><li>GitLab</li><li>CI/CD</li><li>Linux</li><li>Jira</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/cplusplus/12151A" alt="" loading="lazy" onerror="this.remove()">C++</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/python/12151A" alt="" loading="lazy" onerror="this.remove()">Python</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/matlab/12151A" alt="" loading="lazy" onerror="this.remove()">MATLAB</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/docker/12151A" alt="" loading="lazy" onerror="this.remove()">Docker</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/git/12151A" alt="" loading="lazy" onerror="this.remove()">Git</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/gitlab/12151A" alt="" loading="lazy" onerror="this.remove()">GitLab</li>
+            <li>CI/CD</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/linux/12151A" alt="" loading="lazy" onerror="this.remove()">Linux</li>
+            <li><img class="chip-icon" src="https://cdn.simpleicons.org/jira/12151A" alt="" loading="lazy" onerror="this.remove()">Jira</li>
           </ul>
         </div>
       </div>
@@ -333,15 +374,21 @@
         <p class="eyebrow">Education</p>
       </div>
       <div class="edu-grid">
-        <div class="edu-item reveal">
-          <h3>M.Sc. Mechatronics</h3>
-          <p>Hochschule Ravensburg-Weingarten (RWU)</p>
-          <p class="edu-date">Sept 2023 — Jan 2026</p>
+        <div class="edu-item reveal org-row">
+          <img class="org-logo" src="https://www.google.com/s2/favicons?domain=rwu.de&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div>
+            <h3>M.Sc. Mechatronics</h3>
+            <p>Hochschule Ravensburg-Weingarten (RWU)</p>
+            <p class="edu-date">Sept 2023 — Jan 2026</p>
+          </div>
         </div>
-        <div class="edu-item reveal">
-          <h3>B.E. Mechanical Engineering</h3>
-          <p>The Maharaja Sayajirao University of Baroda</p>
-          <p class="edu-date">Jul 2018 — May 2022</p>
+        <div class="edu-item reveal org-row">
+          <img class="org-logo" src="https://www.google.com/s2/favicons?domain=msubaroda.ac.in&sz=128" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div>
+            <h3>B.E. Mechanical Engineering</h3>
+            <p>The Maharaja Sayajirao University of Baroda</p>
+            <p class="edu-date">Jul 2018 — May 2022</p>
+          </div>
         </div>
       </div>
     </div>
