@@ -3997,3 +3997,201 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+/* =========================================================
+   Custom additions — Vardhan Mistry portfolio
+   Experience timeline / Education split-rows / Skills spiderweb
+   ========================================================= */
+
+	.wrapper.style6 {
+		background-color: #f2f3f5;
+		color: #4b4f58;
+	}
+
+		.wrapper.style6 h2, .wrapper.style6 h3 {
+			color: #21252b;
+		}
+
+/* Experience timeline */
+
+	.timeline { width: 100%; }
+	.timeline-item {
+		width: 100%;
+		border-top: 1px solid rgba(255,255,255,0.08);
+	}
+	.timeline-item:first-child { border-top: none; }
+	.timeline-item.is-current { box-shadow: inset 4px 0 0 #4fc3dc; }
+	.timeline-row {
+		display: flex;
+		align-items: center;
+		gap: 2.5em;
+		padding: 2em clamp(1.5em, 6vw, 5em);
+		max-width: 1200px;
+		margin: 0 auto;
+		min-height: 12em;
+	}
+	.timeline-logo {
+		flex: 0 0 152px;
+		width: 152px;
+		height: 96px;
+		background: #fff;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1em;
+	}
+	.timeline-logo img { width: 100%; height: 100%; object-fit: contain; }
+	.timeline-main { flex: 1 1 auto; min-width: 0; }
+	.timeline-top {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.4em 0.8em;
+		margin-bottom: 0.2em;
+	}
+	.timeline-top h3 { font-size: 1.15em; color: #fff; margin: 0; }
+	.timeline-top .grade { font-weight: 400; opacity: 0.6; font-size: 0.85em; }
+	.timeline-date {
+		font-family: "Roboto Mono", monospace;
+		font-size: 0.85em;
+		opacity: 0.55;
+		white-space: nowrap;
+	}
+	.timeline-org { opacity: 0.75; font-size: 0.95em; margin: 0 0 0.6em; }
+	.timeline-desc { opacity: 0.75; font-size: 0.95em; max-width: 70ch; margin: 0; }
+	.timeline-desc em { font-style: normal; color: #fff; font-weight: 500; }
+	.metric { font-family: "Roboto Mono", monospace; font-weight: 600; color: #fff; }
+
+	@media screen and (max-width: 736px) {
+		.timeline-row {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1em;
+			padding: 1.5em;
+			min-height: 0;
+		}
+		.timeline-logo { flex-basis: 110px; width: 110px; height: 72px; }
+		.timeline-item.is-current { box-shadow: inset 0 4px 0 #4fc3dc; }
+	}
+
+/* Education split rows */
+
+	.edu-rows { display: flex; width: 100%; }
+	.edu-row {
+		flex: 1 1 50%;
+		display: flex;
+		align-items: stretch;
+		border-right: 1px solid rgba(0,0,0,0.08);
+	}
+	.edu-row:last-child { border-right: none; }
+	.edu-row-logo {
+		flex: 0 0 42%;
+		background: #e7e9ed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: clamp(1.5em, 4vw, 3em);
+	}
+	.edu-row-logo img { width: 100%; height: 100%; max-height: 200px; object-fit: contain; }
+	.edu-row-main {
+		flex: 1 1 auto;
+		padding: clamp(2em, 4vw, 3.5em) clamp(1.5em, 3vw, 2.5em);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.4em;
+	}
+	.edu-row-main h3 { font-size: 1.15em; margin-bottom: 0.1em; color: #21252b; }
+	.edu-row-main p { font-size: 0.95em; color: #6b6f77; margin: 0; }
+	.edu-date {
+		font-family: "Roboto Mono", monospace;
+		font-size: 0.8em !important;
+		color: #9a9ea5 !important;
+		margin-top: 0.3em !important;
+	}
+
+	@media screen and (max-width: 736px) {
+		.edu-rows { flex-direction: column; }
+		.edu-row { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.08); flex-direction: column; }
+		.edu-row:last-child { border-bottom: none; }
+		.edu-row-logo { flex: 0 0 auto; height: 140px; padding: 1.2em; }
+	}
+
+/* Skills spiderweb */
+
+	.orbit {
+		position: relative;
+		width: min(640px, 92vw);
+		aspect-ratio: 1 / 1;
+		margin: 1em auto;
+	}
+	.orbit-center {
+		position: absolute; top: 50%; left: 50%;
+		transform: translate(-50%,-50%);
+		width: 128px; height: 128px;
+		border-radius: 50%;
+		background: #21252b;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.orbit-center span {
+		font-size: 1em;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		font-family: "Roboto Mono", monospace;
+	}
+	.orbit-ring { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+	.orbit-ring li { position: absolute; }
+	.orbit-item {
+		transform: translate(-50%,-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.4em;
+		width: 78px;
+	}
+	.orbit-label { font-size: 0.72em; color: #6b6f77; text-align: center; }
+	.chip-icon-wrap {
+		width: 46px; height: 46px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #fff;
+		border: 1px solid #d8dade;
+		transition: transform 0.2s ease, border-color 0.2s ease;
+	}
+	.orbit-item:hover .chip-icon-wrap { transform: scale(1.1); border-color: #21252b; }
+	.chip-icon { width: 22px; height: 22px; object-fit: contain; }
+	.chip-mono {
+		font-family: "Roboto Mono", monospace;
+		font-weight: 600;
+		font-size: 0.72em;
+		color: #6b6f77;
+	}
+	.chip-dot::before { content: ""; width: 12px; height: 12px; border-radius: 50%; }
+	.dot-cam::before { background: #1F4FD8; }
+	.dot-radar::before { background: #1E9E6B; }
+	.dot-lidar::before { background: #7A5AF8; }
+	.orbit-web {
+		position: absolute; inset: 0;
+		width: 100%; height: 100%;
+		overflow: visible;
+		pointer-events: none;
+	}
+	.orbit-web line { stroke: #c7cad0; stroke-width: 0.25; opacity: 0.8; }
+	.orbit-web-ring { fill: none; stroke: #c7cad0; stroke-width: 0.3; opacity: 0.9; }
+
+	@media screen and (max-width: 736px) {
+		.orbit-web { display: none; }
+		.orbit { width: auto; aspect-ratio: auto; }
+		.orbit-center { position: static; transform: none; margin: 0 auto 1.4em; }
+		.orbit-ring { position: static; display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; }
+		.orbit-ring li { position: static; }
+		.orbit-item { transform: none; }
+	}
