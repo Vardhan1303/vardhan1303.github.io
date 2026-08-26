@@ -287,6 +287,22 @@ img{ max-width: 100%; display:block; }
   background: var(--cam);
   border-color: var(--cam);
 }
+.timeline-content{
+  display:flex;
+  align-items: stretch;
+  gap: 1.4rem;
+}
+.timeline-logo{
+  flex: 0 0 96px;
+  width: 96px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius);
+  display:flex; align-items:center; justify-content:center;
+  padding: .9rem;
+}
+.timeline-logo img{ width: 100%; height: 100%; object-fit: contain; }
+.timeline-main{ flex: 1 1 auto; min-width: 0; }
 .timeline-top{
   display:flex; flex-wrap: wrap; align-items: baseline;
   justify-content: space-between; gap: .5rem .8rem;
@@ -299,7 +315,6 @@ img{ max-width: 100%; display:block; }
   color: var(--ink-faint); white-space: nowrap;
 }
 .timeline-org{ color: var(--ink-soft); font-size: .92rem; margin-bottom: .5rem; }
-.timeline-org.org-row{ margin-bottom: .6rem; }
 .timeline-desc{ color: var(--ink-soft); font-size: .95rem; max-width: 62ch; }
 .timeline-desc em{ font-style: normal; color: var(--ink); font-weight: 500; }
 .metric{
@@ -312,27 +327,28 @@ img{ max-width: 100%; display:block; }
    ========================================================= */
 .project-rows{
   display:flex; flex-direction: column;
-  gap: 1.6rem;
+  width: 100%;
 }
 .project-row{
   display:flex; align-items: stretch;
   gap: 0;
+  width: 100%;
   background: var(--surface);
-  border: 1px solid var(--line);
-  border-top: 2px solid var(--line);
-  border-radius: var(--radius);
+  border: none;
+  border-top: 3px solid var(--line-soft);
+  border-radius: 0;
   overflow: hidden;
   transition: box-shadow .2s var(--ease);
 }
-.project-row:hover{ box-shadow: 0 10px 28px -16px rgba(18,21,26,.22); }
+.project-row:nth-child(even){ background: var(--surface-alt); }
 .project-row-reverse{ flex-direction: row-reverse; }
 .accent-cam{ border-top-color: var(--cam); }
 .accent-radar{ border-top-color: var(--radar); }
 .accent-lidar{ border-top-color: var(--lidar); }
 
 .project-row-media{
-  flex: 0 0 44%;
-  aspect-ratio: 4 / 3;
+  flex: 0 0 48%;
+  min-height: 480px;
   background: var(--surface-alt);
   overflow: hidden;
 }
@@ -346,11 +362,11 @@ img{ max-width: 100%; display:block; }
 .project-row:hover .project-row-media img{ transform: scale(1.04); }
 
 .project-row-body{
-  flex: 1 1 56%;
-  padding: 2.1rem 2.3rem;
+  flex: 1 1 52%;
+  padding: clamp(2rem, 4vw, 4rem) clamp(2rem, 6vw, 5.5rem);
   display:flex; flex-direction: column;
   justify-content: center;
-  gap: .55rem;
+  gap: .6rem;
 }
 
 .project-tag-source{
@@ -358,8 +374,8 @@ img{ max-width: 100%; display:block; }
   letter-spacing: .06em; text-transform: uppercase;
   color: var(--ink-faint);
 }
-.project-row-body h3{ font-size: 1.2rem; margin-top: .15rem; }
-.project-desc{ color: var(--ink-soft); font-size: .95rem; margin-bottom: .4rem; }
+.project-row-body h3{ font-size: clamp(1.3rem, 2.2vw, 1.75rem); margin-top: .2rem; }
+.project-desc{ color: var(--ink-soft); font-size: 1.02rem; margin-bottom: .4rem; max-width: 52ch; }
 
 .project-metrics{
   display:flex; flex-wrap: wrap; gap: .5rem 1.4rem;
@@ -441,9 +457,14 @@ img{ max-width: 100%; display:block; }
   border-radius: var(--radius);
   padding: 1.3rem 1.5rem;
 }
-.edu-item.org-row{ align-items: flex-start; gap: .85rem; }
-.edu-item.org-row .org-logo{ width: 34px; height: 34px; margin-top: .1rem; }
-.edu-item h3{ font-size: 1rem; margin-bottom: .3rem; }
+.edu-item{ padding: 1.6rem 1.8rem; }
+.edu-item.org-row{ align-items: center; gap: 1.2rem; }
+.edu-item.org-row .org-logo{
+  width: 76px; height: 76px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.edu-item h3{ font-size: 1.05rem; margin-bottom: .3rem; }
 .edu-item p{ font-size: .9rem; color: var(--ink-soft); }
 .edu-date{
   font-family: var(--font-mono); font-size: .78rem !important;
@@ -500,10 +521,14 @@ img{ max-width: 100%; display:block; }
   .nav-actions .btn-sm{ display:none; }
 
   .project-row, .project-row-reverse{ flex-direction: column; }
-  .project-row-media{ flex-basis: auto; aspect-ratio: 16 / 9; }
-  .project-row-body{ padding: 1.5rem 1.6rem; }
+  .project-row-media{ flex-basis: auto; min-height: 260px; }
+  .project-row-body{ padding: 1.6rem 1.6rem; }
   .skills-grid{ grid-template-columns: 1fr; }
   .edu-grid{ grid-template-columns: 1fr; }
+  .edu-item.org-row{ gap: .9rem; }
+  .edu-item.org-row .org-logo{ width: 56px; height: 56px; padding: 7px; }
+  .timeline-logo{ flex-basis: 64px; width: 64px; padding: .5rem; }
+  .timeline-content{ gap: .9rem; }
   .hero{ padding: 3.5rem 0 3rem; }
   .section{ padding: 3.5rem 0; }
 }
