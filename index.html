@@ -109,7 +109,7 @@
 							<div class="image"><a href="https://github.com/Vardhan1303/MedVisionAI" target="_blank" rel="noopener"><img src="images/prisum.jpg" alt="" /></a></div>
 							<div class="content">
 								<h2><a href="https://github.com/Vardhan1303/MedVisionAI" target="_blank" rel="noopener">MedVisionAI</a></h2>
-								<p>AI-driven computer vision solutions for medical imaging, diagnostics, and healthcare automation.</p>
+								<p>Classifies brain MRI scans as healthy or tumorous, comparing a CNN built from scratch against MobileNet-based transfer learning. Transfer learning reaches ~97% test accuracy (~100% validation) versus ~92% for the from-scratch CNN.</p>
 							</div>
 						</section>
 
@@ -120,6 +120,62 @@
 								<p>A cost-effective, autonomous robot that follows a lead vehicle in a platoon formation &mdash; using computer vision and ArUco markers to track the leader and maintain a safe distance without human intervention. A companion Leader Robot in the same project uses LiDAR and camera-based lane detection to guide the platoon.</p>
 							</div>
 						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/sensor-fusion/tree/main/fusion-for-classification" target="_blank" rel="noopener"><img src="images/pic01.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/sensor-fusion/tree/main/fusion-for-classification" target="_blank" rel="noopener">Multi-Sensor Fusion for Shape Classification</a></h2>
+								<p>Fuses images from three simulated sensors &mdash; average, max, and min fusion &mdash; and classifies shapes (circle, square, triangle, pentagon) with a modified LeNet-5 CNN in PyTorch. A majority-voting ensemble across the fused streams reaches 86.5% accuracy on a 5,000+ image synthetic dataset.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/sensor-fusion/tree/main/vehicle-distance-estimation" target="_blank" rel="noopener"><img src="images/pic02.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/sensor-fusion/tree/main/vehicle-distance-estimation" target="_blank" rel="noopener">Vehicle Distance Estimation via Sensor Fusion</a></h2>
+								<p>Fuses LiDAR, radar, and camera data from the Astyx HiRes2019 dataset to estimate vehicle distance more accurately than any single sensor. YOLOv5 detects vehicles in-frame, LiDAR and radar points are projected onto the image, and a Kalman filter fuses the two ranging modalities into a refined distance estimate.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener"><img src="images/pic03.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/Robot-Car-Racing-Competition" target="_blank" rel="noopener">Robot Car Racing Competition</a></h2>
+								<p>A Raspberry Pi 4 robot car built across four embedded-systems tasks: real-time line following, LiDAR-based obstacle stopping 20cm before collision, color-cube detection and approach, and ArUco-marker cube detection &mdash; all running on OpenCV, NumPy, and RPi.GPIO.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/Computer_Vision/tree/main/Task_2_Object_Detection_and_Depth_Estimation" target="_blank" rel="noopener"><img src="images/pic04.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/Computer_Vision/tree/main/Task_2_Object_Detection_and_Depth_Estimation" target="_blank" rel="noopener">Object Detection and Depth Estimation</a></h2>
+								<p>YOLOv8 object detection on the KITTI dataset paired with camera-calibration-based depth estimation, comparing predicted distances against ground truth. Reaches 85% detection accuracy within a 5-meter range, with scatter-plot analysis quantifying depth error across scenes.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/Computer_Vision/tree/main/Task_1_Augmented_Reality" target="_blank" rel="noopener"><img src="images/pic05.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/Computer_Vision/tree/main/Task_1_Augmented_Reality" target="_blank" rel="noopener">Augmented Reality with ArUco Markers</a></h2>
+								<p>Overlays poster images onto real-world scenes by detecting ArUco markers with OpenCV, computing a homography-based transformation, and blending the poster into the marker's perspective. Successfully overlaid posters on 10 of 11 test images.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/Lidar_Radar/tree/main/Task_2_Evaluation_of_an_object_detector" target="_blank" rel="noopener"><img src="images/banner.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/Lidar_Radar/tree/main/Task_2_Evaluation_of_an_object_detector" target="_blank" rel="noopener">Evaluation of a Bird's-Eye-View Object Detector</a></h2>
+								<p>Evaluates a YOLO-based detector on Bird's-Eye-View images from the KITTI dataset, computing IoU, precision, and recall across multiple scenes to quantify detection performance and surface failure cases in complex scenes.</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><a href="https://github.com/Vardhan1303/Lidar_Radar/tree/main/Task_1_Influence_of_Fog_on_the_Sensors" target="_blank" rel="noopener"><img src="images/compviz.jpg" alt="" /></a></div>
+							<div class="content">
+								<h2><a href="https://github.com/Vardhan1303/Lidar_Radar/tree/main/Task_1_Influence_of_Fog_on_the_Sensors" target="_blank" rel="noopener">Influence of Fog on LiDAR and Radar Sensors</a></h2>
+								<p>Compares Blickfeld Cube and Velodyne Puck LiDAR against MMWAVCAS-RF-EVM radar under clear vs. foggy conditions, processing 500+ CSV recordings per sensor per scenario and analyzing RMS-value distributions to quantify how fog degrades each sensor's measurements.</p>
+							</div>
+						</section>
+
 
 					</section>
 
